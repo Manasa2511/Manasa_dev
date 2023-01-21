@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet/less" type="text/css"
+            href="/Less/All-less.less" />
+        <script src="https://cdn.jsdelivr.net/npm/less"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+        <title>Contact</title>
+    </head>
+    <body>
+        <div class="contact-us">
+            <div class="contact-location">
+                <div class="location-head">
+                    <h4>Our Location</h4>
+                </div>
+                <div class="address">
+                    <div class="address-head">
+                        <h5><i class="fa-solid fa-location-dot"></i>Address</h5>
+                        <p>Fit as Fiddle E Commerce Solutions Pvt Ltd</p>
+                        <p>208, Maker Bhavan 3, 21 New Marine Lines</p>
+                        <p>Mumbai-400020, Maharashtra</p>
+                        <p>IN</p>
+                    </div>
+                </div>
+                <div class="email">
+                    <div class="email-head">
+                        <h5><i class="fa-solid fa-envelope"></i>Email</h5>
+                        <p>info@fitasf.com</p>
+                    </div>
+                    <div class="telephone">
+                        <h5><i class="fa-solid fa-phone"></i>Telephone</h5>
+                        <p>+919321392610</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-from">
+                <div class="form-head">
+                    <h4>Contact Form</h4>
+                </div>
+                <div class="form-main">
+                    <div class="name">
+                        <h5>Name</h5>
+                        <div class="name-input">
+                            <input type="text" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="name">
+                        <h5>Email</h5>
+                        <div class="name-input">
+                            <input type="text" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="phone">
+                        <h5>Phone Number</h5>
+                        <input type="tel" id="phone">
+                    </div>
+                    <div class="name">
+                        <h5>Subject</h5>
+                        <div class="name-input">
+                            <input type="text" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="name">
+                        <h5>Message</h5>
+                        <div class="name-input">
+                            <textarea id="subject" name="subject"
+                            placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="send-button">
+                    <button class="button" type="submit">Send Query</button>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    <script>
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            initialCountry: "In",
+          utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+      </script>
+</html>

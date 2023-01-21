@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet/less" type="text/css"
+            href="/Less/All-less.less" />
+        <script src="https://cdn.jsdelivr.net/npm/less"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+            
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="login">
+            <div class="login-form">
+                <div class="login-form-head">
+                    <h2>Login to FITasF.com</h2>
+                </div>
+                <div class="login-form-para">
+                    <p>Login to your account with Phone Number</p>
+                    <p>&nbsp;</p>
+                </div>
+                <div class="login-form-input">
+                    <input type="text" id="mobile_code" class="form-control" placeholder="Phone Number" name="name">
+                </div>
+                <div class="login-form-email">
+                    <p>Use Email Address</p>
+                </div>
+                <div class="login-form-button">
+                    <button class="button">SEND OTP</button>
+                </div>
+                <div class="seprator">
+                    <span class="ng-binding">
+                        <p>Or Continue with</p>
+                    </span>
+                 </div>
+                <div class="login-form-icons">
+                    <div class="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="line">
+                        <h1>|</h1>
+                    </div>
+                    <div class="google">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        const phoneInputField = document.querySelector("#mobile_code");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            initialCountry: "In",
+            separateDialCode: true,
+          utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+      </script>
+      
+</html>
